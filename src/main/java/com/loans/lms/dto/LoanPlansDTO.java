@@ -1,6 +1,8 @@
 package com.loans.lms.dto;
 
 
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.Max;
 import lombok.Data;
 
 import java.io.Serializable;

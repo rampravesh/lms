@@ -69,8 +69,9 @@ public class PlanServiceImpl implements PlanService {
         LoanPlans loanPlan = new LoanPlans();
         //TODO update loanPlan other feild
         loanPlan = modelMapper.map(loanPlansDTO, LoanPlans.class);
-        loanPlansRepository.save(loanPlan);
+        loanPlan = loanPlansRepository.save(loanPlan);
         updatedPlanDto = modelMapper.map(loanPlan, LoanPlansDTO.class);
         return updatedPlanDto;
     }
+
 }
