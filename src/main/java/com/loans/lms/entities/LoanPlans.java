@@ -37,7 +37,7 @@ public class LoanPlans implements Serializable {
     private String planName;
 
     @Column(name = "LoanTypeId")
-    private LoanType loanTypeId;
+    private Integer loanTypeId;
 
 //    @OneToOne(cascade = CascadeType.ALL)
 //    @JoinColumn(name = "LoanTypeId")
