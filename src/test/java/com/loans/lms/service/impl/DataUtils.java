@@ -37,6 +37,7 @@ public class DataUtils {
     private static LoanPlans getLoanPlan(int id, String planName) {
         LoanPlans plans = new LoanPlans();
         plans.setPlanId(id);
+        plans.setInterestRate(5.4f);
         plans.setPlanName(planName);
         return plans;
     }
